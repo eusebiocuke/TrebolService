@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "f3b2bf2b-1c9e-465c-a644-f18685a38d86",
+		"name": "Afinidades",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23844237"
+	},
+	"item": [
+		{
+			"name": "Afinidades",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"id\": 0,\r\n  \"descripcion\": \"Tierra\",\r\n  \"fechaOp\": \"2023-01-22\",\r\n  \"usuarioOp\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/Afinidades",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Afinidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addGrimorio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"nombre\": \"Buena Fortuna\",\r\n  \"numHojas\": 4,\r\n  \"fechaOp\": \"2023-01-22T22:47:12.053Z\",\r\n  \"usuarioOp\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/Grimorios",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Grimorios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IngresosSolicitud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"fechaop\": \"2023-01-22T22:06:09.838Z\",\r\n  \"status\":\"\",\r\n  \"nombre\": \"Carlos \",\r\n  \"apellido\": \"Arzua\",\r\n  \"identificacion\": \"789123\",\r\n  \"edad\": 34,\r\n  \"motivo\": \"\",\r\n  \"idAfinidad\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/ingresoes",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"ingresoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "procesarIngresos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/ingresoes/procesar",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"ingresoes",
+						"procesar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostrarAsignaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/GrimorioAsignadoes",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"GrimorioAsignadoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteIngreso",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/ingresoes/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"ingresoes",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:5017",
+			"type": "string"
+		}
+	]
+}
