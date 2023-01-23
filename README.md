@@ -11,3 +11,34 @@ Se procedera a actualizar la url base del proyecto postman para poder ejecutar l
 
 
 
+Primero debe de realizar una solicitud de ingreso con los datos del estudiante
+ruta: {{host}}/api/ingresoes
+
+
+{
+  "id": 0,
+  "fechaop": "2023-01-22T22:06:09.838Z",
+  "status":"",
+  "nombre": "Carlos ",
+  "apellido": "Arzua",
+  "identificacion": "789123",
+  "edad": 34,
+  "motivo": "",
+  "idAfinidad": 2
+}
+
+
+Despues ejecutar el proceso de validacion de ingreso y asignacion de Gremorio
+
+{{host}}/api/ingresoes/procesar
+
+
+Podra ver las asignaciones realizadas
+{{host}}/api/GrimorioAsignadoes
+
+
+Postdata:
+
+No tuve mucho tiempo para verificar, ya que tuve que trabajar el dia de hoy por que uno de nuestros servidores de reliablesite, estuvo caido por mas de 5 horas, asi que tuvimos que migrar varias cosas a otro servidor
+
+Saludos
