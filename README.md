@@ -37,8 +37,4 @@ Podra ver las asignaciones realizadas
 {{host}}/api/GrimorioAsignadoes
 
 
-Postdata:
-
-No tuve mucho tiempo para verificar, ya que tuve que trabajar el dia de hoy por que uno de nuestros servidores de reliablesite, estuvo caido por mas de 5 horas, asi que tuvimos que migrar varias cosas a otro servidor
-
 Saludos
